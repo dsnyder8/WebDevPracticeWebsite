@@ -1,60 +1,66 @@
-
-
-body{
-    background-color: rgb(128, 156, 165);
-    margin : 0;
+body {
+  background-color: rgb(128, 156, 165);
+  margin: 0;
 }
 
-.paragraph-container{
-    background-color: rgb(120, 120, 211);
-    border-style: solid;
-    border-color: black;
-    padding: 20px;
-    border-radius: 20px;
-    font-family:"consolas", monospace;
-    font-size: 18px;
-    font-weight: bold;
+.paragraph-container {
+  background-color: rgb(120, 120, 211);
+  display: grid;
+  grid-template-columns: auto auto;
+  border-style: solid;
+  border-color: black;
+  padding: 20px;
+  border-radius: 20px;
+  font-family: "consolas", monospace;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-h1{
-
-    font-family:"consolas", monospace;
-    font-size: 36px;
-    font-weight: bold;
-    color:black;
-    border-style: solid;
-    border-color: black;
-    padding: 10px;
-    border-radius: 20px;}
-
-.sidebar-container{
-    float: left;
-    position: absolute;
-    background-color: rgb(192, 92, 5);
-    border-style: solid;
-    border-color: peru;
+h1 {
+  font-family: "consolas", monospace;
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+  border-style: solid;
+  border-color: black;
+  padding: 10px;
+  border-radius: 20px;
 }
 
-#box1{
-    border-radius: 10px;
-    border-style: solid;
-    font-family: "consolas", monospace;
-    padding: 10px;
-    width: 250px;
-    height: 250px;
-    font-size: 22px;
-    background-color: rgb(128, 85, 247);
+.sidebar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: consolas, monospace;
+  font-size: 18px;
+  margin: 0;
+}
+.sidebar-container li {
+  list-style-type: none;
+  margin-right: 80px;
+  border-style: solid;
+  border-color: black;
 }
 
-
-#box2{border: 5px solid black;
-    border-radius: 10px;
-    border-style: solid;
-    font-family: "consolas", monospace;
-    padding: 12px;
-    width: 250px;
-    height: 250px;
-    font-size: 22px;
-    background-color: rgb(128, 85, 247);
+#box1 {
+  border-radius: 10px;
+  border-style: solid;
+  font-family: "consolas", monospace;
+  padding: 10px;
+  width: 250px;
+  height: 250px;
+  font-size: 22px;
+  background-color: rgb(128, 85, 247);
 }
 
+#box2 {
+  border: 5px solid black;
+  border-radius: 10px;
+  border-style: solid;
+  font-family: "consolas", monospace;
+  padding: 12px;
+  width: 250px;
+  height: 250px;
+  font-size: 22px;
+  background-color: rgb(128, 85, 247);
+}
