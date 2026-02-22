@@ -1,11 +1,22 @@
+*{
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(238, 113, 10);
+}
 body {
 display: grid;
 grid-template-columns: 1fr 2fr 2fr 2fr;
 grid-template-rows: auto auto auto auto;
 background-color: rgb(128, 156, 165);
+border-style: solid;
+border-width: 5px;
+border-color: red;
 }
 
 .header{
+    border-style: solid;
+    border-width: 5px; 
+    border-color: blue;
     grid-column-start:1;
     grid-column-end:5;
     background-color: rgb(168, 35, 245);
@@ -18,6 +29,7 @@ background-color: rgb(128, 156, 165);
 
 
 .sidebar-container {
+
 grid-column-start:1;
 grid-column-end:2;
 grid-row-start: 2;
@@ -25,7 +37,7 @@ grid-row-end: 3;
 border-style: solid;
 border-radius: 15px;
 border-width:5px;
-border-color: rgb(128, 156, 165);
+border-color: rgb(0, 168, 224);
 background-color:rgb(168, 35, 245);
 display: flex;
 flex-direction: column;
@@ -40,6 +52,9 @@ flex-direction: column;
     margin: 10px;
 }
 .main-content {
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(4, 248, 134);
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 2;
@@ -59,8 +74,10 @@ flex-direction: column;
     gap: 10px;
     grid-auto-rows:500px;
     margin-top: 10px;
-    
     padding: 15px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(4, 248, 134);
     border-radius: 15px;
 }
 
@@ -76,14 +93,14 @@ flex-direction: column;
     font-weight: bold;
     margin-bottom: 10px;
     font-family: "consolas", monospace;
-   border-bottom: 2px solid black;
+   border-bottom: 2px solid   black;
     padding-bottom: 10px;
     margin-bottom: 2px;
 }
 .biography, .food-blog, .My-pets {
     background-color: rgb(128, 156, 165);
     display: grid;
-    grid-template-rows: auto 1fr;
+        grid-template-rows: auto 1fr;
     border: 5px solid black;
     border-radius: 15px;
     text-align: center;
@@ -98,15 +115,39 @@ flex-direction: column;
     background-position: center;
     width: 100%;
     height: 100%;
-}
-
-.my-pets-img {
-    background-image: url("images/cece.jpg");
-}
-.food-image {
-    background-image: url("images/food.jpg");
-}
-.box-image{
     background-image: url("images/About_Me.jpg");
 }
 
+.my-pets-image {
+    background-image: url("images/cece.jpeg");
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height:100%;
+
+}
+.food-image {
+    background-image: url("images/food.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.h1{
+    font-size: 10px;
+    font-family: "consolas", monospace;
+}
+
+.pet-name{
+    text-align: center;
+    font-size: 20px;
+    font-family: "consolas", monospace;
+
+}
+
+.pet{
+    display:flex;
+    flex-direction: row;
+    
+}
