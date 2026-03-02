@@ -11,6 +11,7 @@ body {
 .header {
   padding: 30px;
   background-color: grey;
+  color: black;
   display: flex;
   justify-content: space-between;
 }
@@ -25,7 +26,7 @@ h1 {
 }
 a {
   text-decoration: none;
-  color: white;
+  color: black;
   padding: 10px;
 }
 a:hover {
@@ -100,6 +101,8 @@ figcaption {
 /* My Pets Page CSS */
 .pet-name {
   font-size: 40px;
+  background-color: grey;
+  text-align: center;
   font-weight: bold;
   font-family: "consolas", monospace;
 }
@@ -107,112 +110,133 @@ figcaption {
 .pet {
   display: flex;
   border-style: solid;
-  flex-direction: column;
-  width: 40%;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
   padding: 10px;
   border-width: 5px;
-  border-color: rgb(0, 217, 255);
+  border-color: rgb(0, 0, 0);
+}
+.pet-image{
+    width: 300px;
+    height: auto;
+    
+}
+.pet-text {
+  font-size: 16px;
+  font-family: "consolas", monospace;
+  margin: 20px;
+  flex-grow: 1;
+}
+.pet-video{
+    /* might need to change from px to % */
+    width: 20%;
+    height: auto;
+    border-style:solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 15px;
 }
 
-.tiktok-embed {
-  margin-top: 20px;
-  border-style: solid;
-  border-width: 5px;
-  border-color: rgb(0, 217, 255);
-  border-radius: 15px;
-  background-color: aquamarine;
-}
+
 
 /* Food Blog Page CSS */
+
+.food-main-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
-  height: 100%;
   table-layout: fixed;
-  margin: 40px;
+  margin: 40px 0;
 }
 
 th {
   border-width: 5px;
   border-style: solid;
-  border-color: rgb(0, 217, 255);
+  border-color: rgb(8, 8, 8);
   border-radius: 15px;
-  background-color: rgb(3, 136, 91);
+  background-color: rgb(54, 54, 54);
   font-family: fantasy;
-  font-size: 40px;
+  font-size: 20px;
   text-align: center;
   letter-spacing: 2px;
-  border-bottom: 8px solid black;
-}
+  border-bottom: 4px solid black;
+  padding: 10px;
+  word-break: break-word; /*just in case text is too long*/
+  color: white; 
+}   
 
 td {
   border-style: solid;
   border-width: 5px;
-  border-color: rgb(0, 217, 255);
+  border-color: rgb(15, 15, 15);
   border-radius: 5px;
-  background-color: rgb(3, 136, 91);
+  background-color: grey;
+  padding: 10px;
   font-family: fantasy;
-  font-size: 20px;
+  font-size: 16px;
+  word-break: break-word; /*just in case text is too long*/
 }
 
 /* Biography CSS */
-#timeline {
-  display: flex;
-  background-color: #031625;
+/* Timeline Container */
+.timeline {
+  background: var(--primary-color);
+  margin: 20px auto;
+  padding: 20px;
 }
 
-#timeline:hover .tl-item {
-  width: 23.3333%;
+/* Outer Layer with the timeline border */
+.outer {
+  border-left: 2px solid #333;
 }
 
-.tl-item {
+/* Card container */
+.card {
   position: relative;
-  width: 25%;
-  height: auto;
-  color: #fff;
-  overflow: hidden;
-  transition: width 0.5s ease;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  background: #333;
+  color: gray;
+  border-radius: 8px;
+  max-width: 400px;
 }
 
-.tl-item::before,
-.tl-item::after {
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Title of the card */
+.title {
+  color: orangered;
+  position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  left: -39px;
+  border: 3px solid orangered;
 }
 
-.tl-item::after {
-  background: rgba(3, 22, 37, 0.85);
-  opacity: 1;
-  transition: opacity 0.5s ease;
-}
-
-.tl-item::before {
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 75%
-  );
-  z-index: 1;
-  opacity: 0;
-  transform: translateY(50%);
-  transition:
-    opacity 0.5s ease,
-    transform 0.5s ease;
-}
-
-.tl-item:hover {
-  width: 30% !important;
-}
-
-.tl-item:hover::after {
-  opacity: 0;
-}
-
-.tl-item:hover::before {
-  opacity: 1;
-  transform: translateY(0);
+.biography-imgages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width:20%;
+  height: 20%;
 }
