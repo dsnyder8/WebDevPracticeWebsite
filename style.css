@@ -117,28 +117,26 @@ figcaption {
   border-width: 5px;
   border-color: rgb(0, 0, 0);
 }
-.pet-image{
-    width: 300px;
-    height: auto;
-    
+.pet-image {
+  width: 300px;
+  height: auto;
 }
 .pet-text {
   font-size: 16px;
+  text-align: center;
   font-family: "consolas", monospace;
   margin: 20px;
   flex-grow: 1;
 }
-.pet-video{
-    /* might need to change from px to % */
-    width: 20%;
-    height: auto;
-    border-style:solid;
-    border-width: 5px;
-    border-color: black;
-    border-radius: 15px;
+.pet-video {
+  /* might need to change from px to % */
+  width: 20%;
+  height: auto;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  border-radius: 15px;
 }
-
-
 
 /* Food Blog Page CSS */
 
@@ -168,8 +166,8 @@ th {
   border-bottom: 4px solid black;
   padding: 10px;
   word-break: break-word; /*just in case text is too long*/
-  color: white; 
-}   
+  color: white;
+}
 
 td {
   border-style: solid;
@@ -216,7 +214,7 @@ td {
 
 /* Title of the card */
 .title {
-  color: orangered;
+  color: red;
   position: relative;
 }
 
@@ -237,6 +235,6 @@ td {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width:20%;
+  width: 20%;
   height: 20%;
 }
