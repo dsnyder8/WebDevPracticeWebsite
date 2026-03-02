@@ -37,12 +37,17 @@ figcaption {
   font-family: "consolas", monospace;
 }
 /* Home Page CSS */
+
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .images-wrapper {
   display: flex;
-  flex-direction: column;
+  gap: 60px;
   flex-wrap: wrap;
-  gap: 20px;
-  width: 20%;
+  
 }
 
 .My-pets:hover,
@@ -59,10 +64,9 @@ figcaption {
   display: flex;
   justify-content: center;
   text-decoration: none;
-  flex-grow: 1;
 }
 .food-blog,
-.My-pets {
+.My-pets,.biography {
   background-color: rgb(128, 156, 165);
   display: grid;
   grid-template-rows: auto 1fr;
@@ -73,6 +77,8 @@ figcaption {
   font-size: 18px;
   cursor: pointer;
   overflow: hidden;
+  flex: 1;
+  min-width:250px;
 }
 
 .bio-image,
@@ -189,6 +195,9 @@ td {
   background: var(--primary-color);
   margin: 20px auto;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /* Outer Layer with the timeline border */
