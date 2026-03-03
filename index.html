@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+            .embedded-style{
+                font-size: 18px;
+                color: darkblue;
+            }
+            </style>
 </head>
     <body>
         <header class="header">
             <h1>Welcome to My Personal Website</h1>
         <nav>   
-            <a href="index.html">Home</a></li>
-            <a href="biography.html">Biography</a></li>
-            <a href="pets.html">My Pets</a></li>
-            <a href="food.html">Food!</a></li>
-            <a href="references.html">References</a></li>
+            <a href="index.html">Home</a>
+            <a href="biography.html">Biography</a>
+            <a href="pets.html">My Pets</a>
+            <a href="food.html">Food!</a>
+            <a href="references.html">References</a>
         </nav>
+        
         </header>
         
-    
-    <img src="background.jpg" alt="Background Image" class="background-image">
-    <p>My name is Dakota Snyder, and this is my practice on my first website.</p>
-    <p>This is a simple webpage to introduce myself.</p>
-
+    <div class="intro">
+    <p class = "embedded-style">My name is Dakota Snyder and this is my first personal website.</p>
+    <p class = "embedded-style">This website is where I'm sharing my journey, life, loves, and interests.</p>
+    <p class = "embedded-style"> Below are four cards that you can click on to learn more about me, my pet family, and my love for food!</p>   
+    </div>
     <div class = "main-content">
         <div class="about-me">
         </div>
@@ -30,24 +37,31 @@
         <a href="pets.html" class="My-pets">
         <div class="box-title">My Pets</div>
         <div class="my-pets-image"></div>
-        <p class="image-description">My life story and journey</p>
+        <p class="image-description">Learn more about my pet family!</p>
         </a>
 
         <a href="food.html" class="food-blog">
         <div class="box-title">Food Blog</div>
         <div class="food-image"> </div>
-                <p class="image-description">My life story and journey</p>
-
+            <p class="image-description">Learn about my top food spots around Minneapolis,MN and the world!</p>
         </a>
         
         <a href="biography.html" class="biography">
         <div class="box-title">Biography</div>
         <div class="bio-image"></div>
-        <p class="image-description">My life story and journey</p>
+        <p class="image-description">My life journey</p>
         </a>
          </div>    
     </div>
         
-    <footer class="footer">© 2026 Dakota Snyder. All rights reserved.</footer>
+       
+    <footer class="footer">© 2026 Dakota Snyder. All rights reserved.
+        <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+        src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+    </a>
+    </p>
+    </footer>
     </body>
 </html>
